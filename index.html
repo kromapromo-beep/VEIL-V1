@@ -935,32 +935,246 @@ body {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+
+  /* Layout */
+  .wrap {
+    padding: 20px 14px 60px;
+  }
+
+  /* Header */
   .systemName {
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 4px;
   }
 
   .hexIcon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .choiceGrid {
-    grid-template-columns: 1fr;
+    width: 36px;
+    height: 36px;
   }
 
   .headerContent {
     flex-direction: column;
     align-items: flex-start;
+    gap: 12px;
   }
 
+  .headerDesc {
+    font-size: 11px;
+  }
+
+  .headerActions {
+    width: 100%;
+  }
+
+  .headerActions .cyberBtn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Interface panel */
+  .interfacePanel {
+    padding: 16px;
+  }
+
+  /* Question UI */
+  .questionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .qPrompt {
+    font-size: 15px;
+  }
+
+  .qSystem {
+    font-size: 11px;
+  }
+
+  /* Choices */
+  .choiceGrid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .choiceBtn {
+    padding: 14px;
+    font-size: 12px;
+  }
+
+  .choiceMain {
+    font-size: 12px;
+    padding-right: 24px;
+  }
+
+  .choiceArrow {
+    font-size: 16px;
+    right: 12px;
+    bottom: 14px;
+  }
+
+  /* Slider */
+  .sliderContainer {
+    width: 100%;
+  }
+
+  .sliderLabels {
+    font-size: 11px;
+    gap: 8px;
+  }
+
+  .sliderMarkers {
+    font-size: 10px;
+  }
+
+  .sliderValue {
+    font-size: 20px;
+  }
+
+  /* Text input */
   .inputGroup {
     flex-direction: column;
   }
 
+  .cyberInput {
+    font-size: 12px;
+    padding: 10px 14px;
+  }
+
+  /* Instability mask */
+  .instabilityMask {
+    width: 110px;
+    height: 110px;
+    margin: 20px auto;
+  }
+
+  /* Results */
+  .verdictPanel {
+    padding: 16px;
+  }
+
+  .verdictVisual {
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
   .maskDisplay {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .verdictHeader {
+    font-size: 11px;
+  }
+
+  .verdictRow {
+    font-size: 10px;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 0;
+  }
+
+  .verdictRow span:first-child {
+    font-size: 9px;
+  }
+
+  /* Balance bars */
+  .balanceBars {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .balanceBar {
+    padding: 10px;
+  }
+
+  .balanceValue {
+    font-size: 22px;
+  }
+
+  .balanceLabel {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  /* Verdict action buttons */
+  .verdictActions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .verdictActions .cyberBtn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Buttons general */
+  .cyberBtn {
+    font-size: 11px;
+    padding: 10px 16px;
+    letter-spacing: 1px;
+  }
+
+  /* Boot sequence */
+  .bootSequence {
+    font-size: 11px;
+  }
+
+  .bootLine {
+    font-size: 11px;
+  }
+
+  /* State icons */
+  .stateIcon {
+    font-size: 36px;
+  }
+
+  .stateTitle {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .stateDesc {
+    font-size: 12px;
+  }
+
+  /* Data divider spacing */
+  .dataDivider {
+    margin: 16px 0;
+  }
+
+  /* System sub text */
+  .systemSub {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  /* Status indicator */
+  .statusIndicator {
+    padding: 6px 12px;
+  }
+
+  .statusText {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .systemName {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+
+  .balanceBars {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .balanceValue {
+    font-size: 18px;
+  }
+
+  .qPrompt {
+    font-size: 13px;
   }
 }
   </style>
